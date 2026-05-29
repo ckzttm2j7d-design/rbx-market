@@ -1,91 +1,82 @@
 
 body{
-  margin:0;
-  font-family:Arial;
-  background:#0f0b18;
-  color:white;
+margin:0;
+font-family:Arial;
+background:#0d0b14;
+color:white;
 }
 
 header{
-  display:flex;
-  justify-content:space-between;
-  padding:20px;
-  background:#1a1328;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:#161122;
+border-bottom:1px solid #7c3aed;
 }
 
-header button{
-  background:#7c3aed;
-  border:none;
-  color:white;
-  padding:10px 20px;
-  border-radius:10px;
+button{
+background:#7c3aed;
+border:none;
+color:white;
+padding:12px 20px;
+border-radius:10px;
 }
 
 .hero{
-  text-align:center;
-  padding:60px 20px;
+text-align:center;
+padding:80px 20px;
 }
 
 .products{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  flex-wrap:wrap;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+padding:20px;
 }
 
 .card{
-  width:280px;
-  background:#1b1430;
-  border:1px solid #7c3aed;
-  padding:20px;
-  border-radius:15px;
-  text-align:center;
+width:280px;
+background:#181325;
+border:1px solid #7c3aed;
+padding:20px;
+border-radius:15px;
+text-align:center;
 }
 
 .card span{
-  display:block;
-  margin:15px 0;
-  color:#c084fc;
-  font-size:22px;
+display:block;
+margin:15px 0;
+font-size:22px;
+color:#c084fc;
 }
 
-.card button{
-  background:#7c3aed;
-  border:none;
-  color:white;
-  padding:12px 20px;
-  border-radius:10px;
+.wallet{
+text-align:center;
+padding:40px;
 }
 
 .modal{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.7);
-  display:none;
-  justify-content:center;
-  align-items:center;
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.7);
+justify-content:center;
+align-items:center;
 }
 
 .modal-box{
-  background:#1a1328;
-  padding:30px;
-  border-radius:15px;
-  width:300px;
+background:#1b1430;
+padding:30px;
+border-radius:15px;
+width:300px;
 }
 
 .modal-box input{
-  width:100%;
-  margin:10px 0;
-  padding:10px;
-  border:none;
-  border-radius:10px;
-}
-
-.modal-box button{
-  width:100%;
-  padding:12px;
-  background:#7c3aed;
-  border:none;
-  color:white;
-  border-radius:10px;
+width:100%;
+margin:10px 0;
+padding:10px;
+border:none;
+border-radius:10px;
 }

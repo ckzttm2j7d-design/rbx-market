@@ -4,46 +4,71 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RBX Market</title>
+<title>RBX MARKET ULTRA</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>RBX MARKET</h1>
-  <button onclick="openLogin()">Đăng nhập</button>
+<h1>RBX MARKET</h1>
+<div>
+<button onclick="openLogin()">Đăng nhập</button>
+<button onclick="openAdmin()">Admin</button>
+</div>
 </header>
 
 <section class="hero">
-  <h2>Shop Acc Roblox Auto</h2>
-  <p>Tự động giao acc sau khi mua</p>
+<h2>SHOP ACC ROBLOX AUTO</h2>
+<p>Random acc - Auto giao - Roblox gaming store</p>
 </section>
 
 <section class="products">
-
 <div class="card">
-  <h3>Acc Blox Fruit VIP</h3>
-  <p>Max Level - Full Gamepass</p>
-  <span>299.000đ</span>
-  <button onclick="buyAccount('rbxvip01','pass123')">Mua ngay</button>
+<h3>Acc Blox Fruit VIP</h3>
+<p>Max level - Full gamepass</p>
+<span>299.000đ</span>
+<button onclick="fakePay('rbxvip01','pass123')">Mua ngay</button>
 </div>
 
 <div class="card">
-  <h3>Acc Anime Adventures</h3>
-  <p>Nhiều nhân vật hiếm</p>
-  <span>499.000đ</span>
-  <button onclick="buyAccount('animevip01','pass456')">Mua ngay</button>
+<h3>Acc Anime Adventures</h3>
+<p>Nhiều unit hiếm</p>
+<span>499.000đ</span>
+<button onclick="fakePay('animevip01','pass456')">Mua ngay</button>
 </div>
 
+<div class="card">
+<h3>Random Roblox</h3>
+<p>Random acc siêu hiếm</p>
+<span>99.000đ</span>
+<button onclick="randomAcc()">Random ngay</button>
+</div>
+</section>
+
+<section class="wallet">
+<h2>Ví người dùng</h2>
+<p>Số dư: 999.999đ</p>
+<button onclick="fakeNap()">Nạp MoMo</button>
 </section>
 
 <div class="modal" id="loginModal">
-  <div class="modal-box">
-    <h2>Đăng nhập</h2>
-    <input type="text" placeholder="Tên tài khoản">
-    <input type="password" placeholder="Mật khẩu">
-    <button onclick="closeLogin()">Đăng nhập</button>
-  </div>
+<div class="modal-box">
+<h2>Đăng nhập</h2>
+<input placeholder="Tên tài khoản">
+<input type="password" placeholder="Mật khẩu">
+<button onclick="closeLogin()">Đăng nhập</button>
+</div>
+</div>
+
+<div class="modal" id="adminModal">
+<div class="modal-box">
+<h2>ADMIN PANEL</h2>
+<p>Doanh thu hôm nay: 12.500.000đ</p>
+<p>Số acc đã bán: 25</p>
+<button onclick="alert('Đã thêm acc!')">Thêm acc</button>
+<button onclick="alert('Đã xoá acc!')">Xoá acc</button>
+<button onclick="closeAdmin()">Đóng</button>
+</div>
 </div>
 
 <script src="script.js"></script>
